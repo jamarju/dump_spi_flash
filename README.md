@@ -232,7 +232,8 @@ This is to flash mtdblock2 (linux kernel). What we do here is:
 1. Download mtdblock2 from the tftp root into temp RAM (0x83000000).
 2. `protect off` the chip
 3. Erase 0x100000 starting from 0x9f050000 (where mtdblock2 is mapped).
-4. re-read NOR block and compare to temp block.
+4. Program 0x100000 bytes from 0x83000000 (temp RAM) to 0x9f050000 (NOR).
+5. re-read NOR block and compare to temp RAM block.
 
 ```
 ar7240> tftp 83000000 mtdblock2
@@ -424,4 +425,4 @@ reset
 
 * [The guy who posted this](https://community.ubnt.com/t5/airMAX-General-Discussion/ns-loco-m2-lost-his-WLAN-MAC-and-how-to-repair-a-bad-flash/td-p/545712).
 * [Everyone involved in this post](http://community.ubnt.com/t5/UniFi-Wireless/Again-on-Unifi-BAD-DATA-CRC/m-p/746202)
-* [This guy's scratch notes](ftp://powerfast.net/pub/windows/routers/ubiquiti/unifis/ubiquit-boot-flash.txt)
+* This guy's scratch notes: ftp://powerfast.net/pub/windows/routers/ubiquiti/unifis/ubiquit-boot-flash.txt
