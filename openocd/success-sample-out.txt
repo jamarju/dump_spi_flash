@@ -1,0 +1,31 @@
+main(argc=1, argv=["foobar"]);
+Hello ARM World!
+System clock: 72000000 Hz
+* Read id
+
+-> 9f
+<- ef 40 17
+* Read status reg 1
+
+-> 05
+<- 00
+* Read status reg 2
+
+-> 35
+<- 00
+(d)ump, (p)rogram + verify or (v)erify?
+
+p
+* Write enable
+
+* Chip erase
+
+-> c7
+<-
+* Write flash
+
+* Verify flash
+
+100% verify OK!!
+
+Ok bye
