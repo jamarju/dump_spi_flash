@@ -1,0 +1,311 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:25Q64CVFIG programmer-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bluepill_STM32F103C8T6 IC1
+U 1 1 57B5F399
+P 3150 3350
+F 0 "IC1" H 3150 4400 60  0000 C CNN
+F 1 "Bluepill_STM32F103C8T6" H 3150 2300 60  0000 C CNN
+F 2 "" H 3150 3350 60  0000 C CNN
+F 3 "" H 3150 3350 60  0000 C CNN
+	1    3150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57B5F579
+P 5250 2650
+F 0 "R2" V 5150 2700 50  0000 C CNN
+F 1 "4K7" V 5350 2700 50  0000 C CNN
+F 2 "" H 5250 2650 60  0000 C CNN
+F 3 "" H 5250 2650 60  0000 C CNN
+	1    5250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57B5F5EA
+P 6900 3250
+F 0 "#PWR01" H 6900 3250 30  0001 C CNN
+F 1 "GND" H 6900 3180 30  0001 C CNN
+F 2 "" H 6900 3250 60  0001 C CNN
+F 3 "" H 6900 3250 60  0001 C CNN
+	1    6900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57B5F605
+P 2200 4500
+F 0 "#PWR02" H 2200 4500 30  0001 C CNN
+F 1 "GND" H 2200 4430 30  0001 C CNN
+F 2 "" H 2200 4500 60  0001 C CNN
+F 3 "" H 2200 4500 60  0001 C CNN
+	1    2200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4200 2200 4200
+Wire Wire Line
+	2200 4200 2200 4500
+Wire Bus Line
+	1900 2000 4650 2000
+Wire Bus Line
+	4650 2000 4650 4150
+Wire Bus Line
+	4650 4150 7150 4150
+Wire Bus Line
+	7150 4150 7150 2800
+Entry Wire Line
+	1900 2300 2000 2400
+Wire Wire Line
+	2000 2400 2450 2400
+Text Label 2400 2400 2    60   ~ 0
+~CS
+Entry Wire Line
+	4650 3700 4750 3600
+Entry Wire Line
+	4650 3600 4750 3500
+Entry Wire Line
+	7050 2900 7150 2800
+Entry Wire Line
+	7050 3000 7150 2900
+Wire Wire Line
+	5350 2900 5250 2900
+Wire Wire Line
+	5250 2900 5250 2750
+Wire Wire Line
+	4750 3500 5350 3500
+Wire Wire Line
+	5350 3600 4750 3600
+$Comp
+L +3.3V #PWR03
+U 1 1 57B5F7D5
+P 4150 2600
+F 0 "#PWR03" H 4150 2560 30  0001 C CNN
+F 1 "+3.3V" H 4150 2710 30  0000 C CNN
+F 2 "" H 4150 2600 60  0001 C CNN
+F 3 "" H 4150 2600 60  0001 C CNN
+	1    4150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 57B5F7F0
+P 5250 2400
+F 0 "#PWR04" H 5250 2360 30  0001 C CNN
+F 1 "+3.3V" H 5250 2510 30  0000 C CNN
+F 2 "" H 5250 2400 60  0001 C CNN
+F 3 "" H 5250 2400 60  0001 C CNN
+	1    5250 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2600 4150 2600
+Wire Wire Line
+	5250 2400 5250 2550
+Wire Wire Line
+	6650 2900 7050 2900
+Wire Wire Line
+	6650 3000 7050 3000
+Wire Wire Line
+	6650 3500 6800 3500
+Wire Wire Line
+	6800 3500 6800 3200
+Wire Wire Line
+	6800 3200 6900 3200
+Wire Wire Line
+	6900 3200 6900 3250
+$Comp
+L +3.3V #PWR05
+U 1 1 57B5F8AA
+P 5100 2400
+F 0 "#PWR05" H 5100 2360 30  0001 C CNN
+F 1 "+3.3V" H 5100 2510 30  0000 C CNN
+F 2 "" H 5100 2400 60  0001 C CNN
+F 3 "" H 5100 2400 60  0001 C CNN
+	1    5100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 2400
+Wire Bus Line
+	1900 2000 1900 2300
+Entry Wire Line
+	4550 3400 4650 3300
+Entry Wire Line
+	4550 3300 4650 3200
+Entry Wire Line
+	4550 3200 4650 3100
+Wire Wire Line
+	3850 3200 4550 3200
+Wire Wire Line
+	3850 3300 4550 3300
+Wire Wire Line
+	3850 3400 4550 3400
+Text Label 3900 3200 0    60   ~ 0
+MOSI
+Text Label 3900 3300 0    60   ~ 0
+MISO
+Text Label 3900 3400 0    60   ~ 0
+CLK
+$Comp
+L R R1
+U 1 1 57B5FA32
+P 4950 2650
+F 0 "R1" V 4850 2700 50  0000 C CNN
+F 1 "4K7" V 5050 2700 50  0000 C CNN
+F 2 "" H 4950 2650 60  0000 C CNN
+F 3 "" H 4950 2650 60  0000 C CNN
+	1    4950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2750 4950 3500
+Connection ~ 4950 3500
+$Comp
+L +3.3V #PWR06
+U 1 1 57B5FA79
+P 4950 2400
+F 0 "#PWR06" H 4950 2360 30  0001 C CNN
+F 1 "+3.3V" H 4950 2510 30  0000 C CNN
+F 2 "" H 4950 2400 60  0001 C CNN
+F 3 "" H 4950 2400 60  0001 C CNN
+	1    4950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2400 4950 2550
+Text Label 6700 2900 0    60   ~ 0
+CLK
+Text Label 6700 3000 0    60   ~ 0
+MOSI
+Text Label 5300 3600 2    60   ~ 0
+MISO
+Text Label 5300 3500 2    60   ~ 0
+~CS
+$Comp
+L +3.3V #PWR07
+U 1 1 57B5FB63
+P 6900 3600
+F 0 "#PWR07" H 6900 3560 30  0001 C CNN
+F 1 "+3.3V" H 6900 3710 30  0000 C CNN
+F 2 "" H 6900 3600 60  0001 C CNN
+F 3 "" H 6900 3600 60  0001 C CNN
+	1    6900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 57B5FB7A
+P 6900 3800
+F 0 "R3" V 6800 3850 50  0000 C CNN
+F 1 "4K7" V 7000 3850 50  0000 C CNN
+F 2 "" H 6900 3800 60  0000 C CNN
+F 3 "" H 6900 3800 60  0000 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3600 6900 3700
+Wire Wire Line
+	6650 3600 6650 4000
+Wire Wire Line
+	6650 4000 6900 4000
+Wire Wire Line
+	6900 4000 6900 3900
+Text Notes 2750 5100 0    60   ~ 0
+Notes:\n\n- ~CS~ pulled up because "~CS~ must track VCC on boot" (datasheet)\n- Assumed high impedance on all unused pins (datasheet does not say), hence the pull ups.\n- +3.3V can be supplied by the ST-Link debugger.
+$Comp
+L 25Q64CVFIG IC2
+U 1 1 57B60051
+P 6000 3250
+F 0 "IC2" H 6000 3700 60  0000 C CNN
+F 1 "25Q64CVFIG" H 6000 2800 60  0000 C CNN
+F 2 "" H 6000 3250 60  0001 C CNN
+F 3 "" H 6000 3250 60  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2450 2500
+NoConn ~ 2450 2600
+NoConn ~ 2450 2700
+NoConn ~ 2450 2800
+NoConn ~ 2450 2900
+NoConn ~ 2450 3000
+NoConn ~ 2450 3100
+NoConn ~ 2450 3200
+NoConn ~ 2450 3300
+NoConn ~ 2450 3400
+NoConn ~ 2450 3500
+NoConn ~ 2450 3600
+NoConn ~ 2450 3700
+NoConn ~ 2450 3800
+NoConn ~ 2450 3900
+NoConn ~ 2450 4000
+NoConn ~ 2450 4100
+NoConn ~ 2450 4300
+NoConn ~ 3850 2500
+NoConn ~ 3850 2700
+NoConn ~ 3850 2800
+NoConn ~ 3850 2900
+NoConn ~ 3850 3000
+NoConn ~ 3850 3100
+NoConn ~ 3850 3500
+NoConn ~ 3850 3600
+NoConn ~ 3850 3700
+NoConn ~ 3850 3800
+NoConn ~ 3850 3900
+NoConn ~ 3850 4000
+NoConn ~ 3850 4100
+NoConn ~ 3850 4200
+NoConn ~ 3850 4300
+NoConn ~ 3850 2400
+Text Notes 1950 1700 0    79   ~ 16
+STM32F103C8T6 dev board AKA "Bluepill" used as a SPI NOR flash programmer\n(Winbond 25Q64CVFIG)
+$EndSCHEMATC
