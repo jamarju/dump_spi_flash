@@ -1,6 +1,6 @@
 # SPI NOR flash dumper and programmer
 
-![Schematic](schematic/svg/25Q64CVFIG%20programmer.sch.svg?raw=true)
+![Schematic](schematic/svg/25Q64CVFIG%20programmer.sch.png?raw=true)
 
 
 This is a SPI NOR flash dumper and programmer based on the ARM STM32F103C8T6 development board (AKA "Bluepill"), made specifically to dump and replace the Winbond 25Q64CVFIG chip used in Ubiquiti Unifi access points (UAP). Apparently these tend to fail over time with a very common problem in NOR flashes: bit flipping. Since there is no ECC at all in these chips, a bit flip will cause corrupted reads, which are rewarded by Linux with kernel panics, random lockups or the inability to boot the UAP at all.
